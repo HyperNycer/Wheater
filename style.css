@@ -1,0 +1,167 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+:root {
+    --background-color: white;
+    --foreground-color: black;
+}
+
+body{
+    height:100vh;
+    /*background:linear-gradient(blue,purple,brown, blue);*/
+    background-color: var(--background-color);
+    color: var(--foreground-color);
+}
+
+.container{
+    font-size: larger;
+    font-family:sans-serif;
+    color:var(--foreground-color);
+    height: 20em;
+}
+
+.name{
+    height:50px;
+    justify-content: space-around;
+    display:flex;
+    align-items: center;
+}
+
+.location{
+    justify-content: space-around;
+    display:flex;
+    align-items: center;
+}
+
+.temperature-container{
+    height:40px;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.degree-section{
+    display:flex;
+    align-items: center;
+}
+
+
+
+.temperature-description{
+    color:red;
+    font-size: 1cm;
+}
+
+.icon{
+    position: relative;
+    margin: 0cm;
+}
+
+.description{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.table{
+    margin-left: auto;
+    margin-right: auto;
+    background:linear-gradient(purple,blue);
+    color:white;
+    font-family: sans-serif;
+    font-size:2rem;
+    border-radius: 8px;
+}
+
+th{
+    height:150px;
+    width:200px;
+}
+
+th:nth-child(even) {background:linear-gradient(purple)}
+
+.switch {
+  position: relative;
+  align-items: center;
+  display: inline-block;
+  width: 40px;
+  height: 17px;
+}
+
+.switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--foreground-color);
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  background-color: var(--background-color);
+  height: 13px;
+  width: 13px;
+  left: 0.5px;
+  bottom: 2px;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+
+input:checked + .slider {
+  background-color: var(--foreground-color);
+}
+
+.slider:after{
+    background-color: var(--foreground-color);
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+
+
+.dark-mode {
+  background-color: var(--foreground-color);
+  color: var(--background-color);
+}
+
+.graphic-table{
+  display:flex;
+  align-items: center;
+}
+
+canvas {
+  padding-left: 0;
+  padding-right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  width: 800px;
+}
