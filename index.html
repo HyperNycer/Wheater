@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+        Tamás Időjárás előrejelző oldala
+    </title>
+    <script src="app.js"></script>
+    <script src="dark.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+    <script src="chart.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class=".current-10">hi</div>
+    <div class="icon">
+    </div>
+    <label class="switch">
+        <input type="checkbox" unchecked onchange="myFunction()">
+        <span class="slider round"></span>
+      </label>
+    <div class="container">
+        <div class="name">
+            Wheater
+        </div>
+        <div class="location">
+            <h1 class="location-timezone">Loading...</h1>
+        </div>
+
+        <div class="temperature-container">
+            <div class="degree-section">
+            <div class="temperature">Loading...</div>
+            <span>°C</span>
+            </div>
+        </div>
+
+        <div class="description"><br>Loading...</div>
+
+
+    </div>
+    <table class="table">
+        <tr class="first-row">
+        <th class="first-day-name">Monday</th>
+        <th class="second-day-name">Tuesday</th>
+        <th class="third-day-name">Wednesday</th>
+        <th class="fourth-day-name">Thursday</th>
+        <th class="fiveth-day-name">Friday</th>
+        <th class="sixth-day-name">Saturday</th>
+        <th class="seventh-day-name">Sunday</th>
+        </tr>
+        <tr>
+            <th class="first-day">5</th>
+            <th class="second-day">5</th>
+            <th class="third-day">5</th>
+            <th class="fourth-day">5</th>
+            <th class="fiveth-day">5</th>
+            <th class="sixth-day">5</th>
+            <th class="seventh-day">5</th>
+            </tr>
+            <tr rowspot="3">
+                
+                <td colspan="50" rowspan="20" width="500">
+                    <canvas id="myChart" style="width:120%;max-width:1260px"></canvas>
+                </td>
+            </tr>
+    </table>
+    <div class="graphic-table">
+    </div>
+</body>
+
+</html>
